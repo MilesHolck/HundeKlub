@@ -20,13 +20,13 @@ namespace HundeKlub
         public string Name { get { return _name; } set { _name = value; } } 
         public string Address { get { return _address; } set { _address = value; } }
         public DateTime Birthdate { get { return _birthdate; } set { _birthdate = value; } } 
-        public string Phone { get { return _phone} set { _phone = value; } } 
+        public string Phone { get { return _phone; } set { _phone = value; } } 
         public string Email { get { return _email; } set { _email = value; } }
 
-        public List<string> DogList { get; set; } //String ændres til dog, også i konstruktøren.
+        public List<Dog> DogList { get; set; } 
 
 
-        public Member(string name, List <String> dogList)
+        public Member(string name, List <Dog> dogList)
         {
             Name = name;
             DogList = dogList; 
