@@ -35,7 +35,7 @@ namespace HundeKlub
 
         public override string ToString()
         {
-            return $"Name: {Name} \nDog: Dogs go here";
+            return $"Name: {Name}";
 
         }
 
