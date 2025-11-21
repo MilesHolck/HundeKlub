@@ -8,6 +8,8 @@ namespace HundeKlub
 {
     public class Member
     {
+
+        //Instance fields 
         private int _id;
         private string _name;
         private string _address;
@@ -16,6 +18,7 @@ namespace HundeKlub
         private string _email; 
 
 
+        //Properties
         public int Id { get { return _id; } set { _id = value; } }
         public string Name { get { return _name; } set { _name = value; } } 
         public string Address { get { return _address; } set { _address = value; } }
@@ -26,6 +29,7 @@ namespace HundeKlub
         public List<Dog> DogList { get; set; } 
 
 
+        //Constructor
         public Member(string name, DateTime birthdate, List <Dog> dogList)
         {
             Name = name;
@@ -33,12 +37,16 @@ namespace HundeKlub
             BirthDate = birthdate; 
         }
 
+
+        //Methods 
         public override string ToString()
         {
             return $"Name: {Name}";
 
         }
 
+
+        //CRUD
         public void RegisterDog (Dog dog)
         {
             DogList.Add(dog); 
