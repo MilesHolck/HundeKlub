@@ -19,8 +19,8 @@ namespace HundeKlub
         public int Id { get { return _id; } set { _id = value; } }
         public string Name { get { return _name; } set { _name = value; } } 
         public string Address { get { return _address; } set { _address = value; } }
-        public DateTime Birthdate { get { return _birthDate; } set { _birthDate = value; } } 
-        public string Phone { get { return _phone} set { _phone = value; } } 
+        public DateTime BirthDate { get { return _birthDate; } set { _birthDate = value; } } 
+        public string Phone { get { return _phone; } set { _phone = value; } } 
         public string Email { get { return _email; } set { _email = value; } }
 
         public List<Dog> DogList { get; set; } //String ændres til dog, også i konstruktøren.
