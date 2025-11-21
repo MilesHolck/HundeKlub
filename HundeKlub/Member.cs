@@ -23,7 +23,7 @@ namespace HundeKlub
         public string Phone { get { return _phone; } set { _phone = value; } } 
         public string Email { get { return _email; } set { _email = value; } }
 
-        public List<Dog> DogList { get; set; } //String ændres til dog, også i konstruktøren.
+        public List<Dog> DogList { get; set; } 
 
 
         public Member(string name, DateTime birthdate, List <Dog> dogList)
@@ -39,7 +39,23 @@ namespace HundeKlub
 
         }
 
+        public void RegisterDog (Dog dog)
+        {
+            DogList.Add(dog); 
+        }
 
+        public void PrintDogs()
+        {
+            foreach (Dog dogs in DogList)
+            {
+                Console.WriteLine(dogs); 
+            }
+        }
+
+        public void RemoveDog (Dog dog)
+        {
+            DogList.Remove(dog); 
+        }
 
     }
 }
