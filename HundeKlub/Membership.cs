@@ -34,7 +34,7 @@ namespace HundeKlub
 
         public double CalculateMembershipFee() 
         { 
-            if ()
+            if (hej)
         return _membershipFee + 500;
         }
 
